@@ -2,18 +2,26 @@ import React, { Component } from 'react';
 import './App.css';
 
 class App extends Component {
+  menuClick(){
+const list=document.getElementById("list");
+//list.style.display="block";
+list.classList.toggle("active");
+
+  }
+  
   render() {
     return (
       <>
         <header>
           <nav>
             <div className='logo'>My Website</div>
-            <ul>
+            <ul id="list">
               <li>Home</li>
               <li>About</li>
               <li>Services</li>
               <li>Contact</li>
             </ul>
+            <div className='menu' onClick={()=>this.menuClick()}>&#9776;</div>
           </nav>
         </header>
         <section>
