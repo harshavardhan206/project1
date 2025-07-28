@@ -1,11 +1,27 @@
 import React, { Component } from 'react';
+import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Front end development</h1>
-      </div>
+      <>
+        <header>
+          <nav>
+            <div className='logo'>My Website</div>
+            <ul>
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contact</li>
+            </ul>
+          </nav>
+        </header>
+        <section>
+          <h1>Welcome to My Responsive Website</h1>
+          <p>This design adopts that various screen sizes</p>
+        </section>
+        <footer>Copyright @ 2025. All rights reserved.</footer>
+      </>
     );
   }
 }
